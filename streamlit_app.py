@@ -1,11 +1,9 @@
 import streamlit as st
-from langchain.llms import OpenAI
+from usellm import Message, Options, UseLLM
 st.set_page_config(page_title="🦜🔗 Quickstart App")
 st.title('🦜🔗 Quickstart App')
 
 # openai_api_key = st.sidebar.text_input('OpenAI API Key')
-cuisine = st.selectbox("Select Cuisine:", ["Italian", "Mexican", "Asian", "Mediterranean"])
-meat = st.selectbox("Select Meat Type:", ["Chicken", "Beef", "Pork", "Vegetarian"])
 
 def generate_response(cuisine, meat):
   service = UseLLM(service_url="https://usellm.org/api/llm")
