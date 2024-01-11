@@ -1,7 +1,7 @@
 import streamlit as st
 from usellm import Message, Options, UseLLM
 st.set_page_config(page_title="🦜🔗 Quickstart App")
-st.title('🦜🔗 Quickstart App')
+st.title('🦜🔗 Recipe Recommendation using UseLLM')
 
 # openai_api_key = st.sidebar.text_input('OpenAI API Key')
 
