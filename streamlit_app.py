@@ -16,8 +16,8 @@ def generate_response(cuisine, meat):
   options = Options(messages=messages)
   # Interact with the service
   response = service.chat(options)
-
-  return reponse.content 
+  
+  st.info(response.content ) 
   
 
 with st.form('my_form'):
